@@ -1,0 +1,4 @@
+(executable
+ (public_name glob)
+ (name main)
+ (libraries cmdliner fpath glob))

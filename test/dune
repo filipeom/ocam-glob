@@ -1,0 +1,5 @@
+(cram
+ (deps
+  ; FIXME: Is this horrible?
+  (source_tree ..)
+  %{bin:glob}))
