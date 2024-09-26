@@ -1,5 +1,5 @@
 let glob pattern =
-  match Glob.glob pattern with
+  match Glob.glob ~recursive:true pattern with
   | Error (`Msg err) -> failwith err
   | Ok results ->
       Format.printf "@[<hov>%a@]@."
