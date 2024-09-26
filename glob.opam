@@ -3,13 +3,12 @@ opam-version: "2.0"
 synopsis: "Unix style pathname pattern expansion"
 description:
   "Unix style pathname pattern expansion inspired by python's glob library"
-maintainer: ["Maintainer Name"]
-authors: ["Author Name"]
+maintainer: ["Filipe Marques <filipe.s.marques@tecnico.ulisboa.pt>"]
+authors: ["Filipe Marques <filipe.s.marques@tecnico.ulisboa.pt>"]
 license: "MIT"
-tags: ["topics" "to describe" "your" "project"]
-homepage: "https://github.com/username/reponame"
-doc: "https://url/to/documentation"
-bug-reports: "https://github.com/username/reponame/issues"
+tags: ["topics" "glob" "python" "ocaml" "unix"]
+homepage: "https://github.com/filipeom/ocaml-glob"
+bug-reports: "https://github.com/filipeom/ocaml-glob/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.16"}
@@ -30,4 +29,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/username/reponame.git"
+dev-repo: "git+https://github.com/filipeom/ocaml-glob.git"

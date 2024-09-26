@@ -5,15 +5,13 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github filipeom/ocaml-glob))
 
-(authors "Author Name")
+(authors "Filipe Marques <filipe.s.marques@tecnico.ulisboa.pt>")
 
-(maintainers "Maintainer Name")
+(maintainers "Filipe Marques <filipe.s.marques@tecnico.ulisboa.pt>")
 
 (license "MIT")
-
-(documentation https://url/to/documentation)
 
 (package
  (name glob)
@@ -21,6 +19,4 @@
  (description "Unix style pathname pattern expansion inspired by python's glob library")
  (depends ocaml dune dune-glob)
  (tags
-  (topics "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
+  (topics glob python ocaml unix)))
