@@ -1,7 +1,7 @@
   $ glob "a/b"
   glob: internal error, uncaught exception:
         Failure("directory contents a/: No such file or directory")
-
+        
   [125]
   $ mkdir -p a/b && glob "a/b"
   a/b

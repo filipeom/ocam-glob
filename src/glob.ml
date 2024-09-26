@@ -8,7 +8,7 @@ let rec find_glob_parent p =
 let glob ?(recursive = false) pattern =
   let matcher =
     Dune_re.compile
-    @@ Dune_re.Glob.glob ~double_asterisk:recursive
+    @@ Dune_re.Glob.glob ~anchored:true ~double_asterisk:recursive
     @@ Fpath.to_string pattern
   in
   let traverse = if recursive then `Any else `None in
